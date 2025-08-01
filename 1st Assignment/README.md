@@ -1,9 +1,9 @@
-#DISCOVERING HIDDEN DIRECTORIES
+DISCOVERING HIDDEN DIRECTORIES
 
-#METHODOLOGY
+METHODOLOGY
 To identify hidden or unlinked directories on the target website (http://testphp.vulnweb.com/), I used Gobuster, a directory and file brute-forcing tool. The enumeration was performed using a common wordlist (common.txt) provided by the SecLists project.
 
-#FINDINGS
+FINDINGS
 The scan revealed the following directories and files of interest:
 
 Directory / File	Status Code	Description
@@ -20,7 +20,7 @@ Directory / File	Status Code	Description
 /vendor/	301	May expose package manager files (e.g., PHP Composer)
 
 
-#CONCLUSION
+CONCLUSION
 Sensitive and misconfigured directories like /admin, /secured, and /CVS were discovered, which could potentially be leveraged for further exploitation.
 403 responses such as /cgi-bin/ suggest access control is in place, but these paths still exist and could be brute-forced or fuzzed further.
 Exposure of CVS version control files is a misconfiguration and may leak source code or file structure of the application.
