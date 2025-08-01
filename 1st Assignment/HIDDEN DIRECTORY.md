@@ -46,4 +46,5 @@ Optionally, the -x flag can be used to scan for specific file extensions (e.g., 
 
 
 SCREENSHOTS
+[🔍 Web Reconnaissance Report.pdf](https://github.com/user-attachments/files/21544515/Web.Reconnaissance.Report.pdf)
 
